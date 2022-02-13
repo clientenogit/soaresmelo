@@ -1,0 +1,123 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Soares & Melo - ADVOGADOS ASSOCIADOS</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapperHeader">
+        <div id="header">
+            <img class="img-fluid" src="imgs/topo/foto1.jpg" alt="logo" />
+        </div>
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: #9e8204; z-index: 99999;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarText">
+                <ul class="navbar-nav center-text">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">O Escritório <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="area-atuacao.html">Área de Atuação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profissionais.html">Profissionais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="titulo">
+                    <h1 class="text-center">O Escritório</h1>
+                </div>
+
+                <div class="content-texto text-left">
+                    <p class="paragrafo">Com atuação em importantes áreas do direito, quais sejam: criminal, trabalhista cível e previdenciária tanto de pessoas físicas quanto jurídicas, o Soares e Melo Advogados Associados é um escritório especializado que propicia atendimento personalizado, direto e individualizado de seus clientes.</p>
+
+                    <p class="paragrafo">A incessante busca por níveis de excelência faz com que seus sócios e associados busquem uma constante atualização, seja de forma cientifica e acadêmica, seja nas questões da vida cotidiana.</p>
+
+                    <p class="paragrafo">Procuramos aliar qualidade técnica, criatividade, ética, combatividade e experiência de <span class="numero">15</span>(quinze) anos na militância diária na advocacia.</p>
+
+                    <p class="paragrafo">Nosso objetivo é o alto padrão de eficiência e profissionalismo na resolução as questões jurídicas e práticas e no conhecimento e acompanhamento de todas as circunstâncias do caso, evitando, contudo, qualquer burocracia.</p>
+
+                    <p class="paragrafo">Situado em Goiânia, no coração do Brasil, tem facilidade em atuar em todo território nacional. Também por sua posição geográfica, tem facilidade em contribuir com escritórios de outros Estados, em especial no âmbito dos Tribunais Superiores.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class='wrap'>
+        <ul class='carousel is-set'>
+            <li class='carousel-seat'>
+                <img src="imgs/aba_oescritorio/galeriaanimada01.jpg" class="img-fluid">
+            </li>
+            <li class='carousel-seat'>
+                <img src="imgs/aba_oescritorio/galeriaanimada02.jpg" class="img-fluid">
+            </li>
+            <li class='carousel-seat'>
+                <img src="imgs/aba_oescritorio/galeriaanimada03.gif" class="img-fluid">
+            </li>
+            <li class='carousel-seat is-ref'>
+                <img src="imgs/aba_oescritorio/galeriaanimada04.jpg" class="img-fluid">
+            </li>
+        </ul>
+    </div>
+
+    <div class=' controls controle-slide-esquerdo d-none'>
+        <button class='toggle' data-toggle='back'><i class="fas fa-chevron-left"></i></button>
+    </div>
+
+    <div class='controls controle-slide-direito d-none'>
+        <button id="proximo" class='toggle' data-toggle='next'><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <footer class="footer">
+        <div class="container d-flex justify-content-center">
+            <div>
+                <div> <span class="sigam-nos">Sigam-nos nas Redes Sociais</span>
+                    <a class="social" target="_blank" href="http://www.facebook.com/soaresmeloadv"><i class="fab fa-facebook-f icone-facebook" title="Facebook"></i></a>
+                    <a class="social" target="_blank" href="http://www.instagram.com/soaresmeloadv"><i class="fab fa-instagram icone-instagram" title="Instagram"></i></a>
+                </div>
+                <div class="phone-rodape">
+                    <i class="fas fa-minus"></i><i class="fas fa-minus"></i><i class="fas fa-minus"></i><i class="fas fa-minus"></i><i class="fas fa-minus linha-esquerda"></i>
+                    <span class="ligue-ja">Ligue Já: </span>
+                    <span>062-3231-2280</span>
+                    <i class="fas fa-minus  linha-direit linha-direita"></i><i class="fas fa-minus"></i><i class="fas fa-minus"></i><i class="fas fa-minus"></i><i class="fas fa-minus"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/fontawesome/all.min.js"></script>
+    
+    <script>
+        //click automatico do carousel
+        window.setInterval(function(){ 
+            jQuery('#proximo').trigger('click'); }, 5000);
+    </script>
+
+</body>
+
+</html>

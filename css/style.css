@@ -1,0 +1,276 @@
+
+/* TITULO */
+@font-face {
+font-family: 'TunaMedium';
+src: url(../fonts/TunaMedium.ttf);
+}
+
+@font-face {
+font-family: 'Titulos';
+src: url(../fonts/TunaMedium.ttf);
+}
+
+/* CONTENT-TEXT */
+
+@font-face {
+font-family: 'Justus';
+src: url(../fonts/juvelo.ttf);
+}
+
+/* NAVBAR - FOOTER */
+
+@font-face {
+font-family: 'Museo700';
+src: url(../fonts/Museo700.otf);
+}
+
+
+body{
+    background-color: #f0f0f0;
+}
+
+div#wrapperHeader div#header img {
+    width:100%; /* the width of the logo image */
+}
+
+.navbar{
+    background-color: #9e8204 !important;
+    height: 30px;
+    font-weight: 900;
+    margin-top: -30px;
+    font-family: 'Museo700';
+    font-size: 13px;
+}
+
+
+/* MUDA COR DO ITEM ATIVO DO MENU */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #000000 !important;
+}
+
+/* MUDA COR DOS ITENS DO MENU */
+
+.navbar-light .navbar-nav .nav-link{
+    transition: all 0.3s linear;
+    color: #FFFFFF !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #000000 !important;
+}
+
+.titulo{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: 'TunaMedium';
+}
+
+.titulo-atuacao{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'TunaMedium' !important;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.content-texto{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    color: #7e837d;
+    margin-bottom: 80px;
+    font-family: 'Justus';
+}
+
+.numero{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 13px !important;
+}
+
+footer{
+    margin-top: 60px;
+    background-color: #000000 !important;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+    font-family: 'Museo700';
+    font-size: 0.9rem
+}
+
+
+.wrap {
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  left: -100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transform: translateX(100%);
+}
+@media (min-width: 30em) {
+  .carousel {
+    left: -50%;
+    transform: translateX(50%);
+  }
+}
+@media (min-width: 40em) {
+  .carousel {
+    left: -33.33333%;
+    transform: translateX(33.33333%);
+  }
+}
+
+.carousel.is-reversing {
+  transform: translateX(-100%);
+}
+@media (min-width: 30em) {
+  .carousel.is-reversing {
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 40em) {
+  .carousel.is-reversing {
+    transform: translateX(-33.33333%);
+  }
+}
+
+.carousel.is-set {
+  transform: none;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.carousel-seat {
+  background: #ddd;
+  flex: 1 0 100%;
+  order: 2;
+}
+.carousel-seat:nth-child(even) {
+  background: #d5d5d5;
+}
+@media (min-width: 30em) {
+  .carousel-seat {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 40em) {
+  .carousel-seat {
+    flex-basis: 33.33333%;
+  }
+}
+
+.carousel-seat.is-ref {
+  order: 1;
+}
+
+.controle-slide-esquerdo{
+    position: relative;
+    margin-top: -14%;
+    padding: 2em;
+    float: left;  
+}
+
+.controle-slide-direito{
+    position: relative;
+    margin-top: -14%;
+    padding: 2em;
+    float: right;
+}
+
+.controls button {
+  background: #aaa;
+  border: 0;
+  border-radius: 0.25em;
+  color: #eee;
+  padding: 0.5em 1em;
+}
+.controls button:hover, .controls button:focus {
+  background: #7e837d;
+}
+
+.icone-facebook{
+    margin-left: 30px;
+}
+
+.icone-instagram{
+    margin-left: 10px;
+}
+
+.phone-rodape{
+    margin-left: -8px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fa-minus{
+    margin-left: -1px;
+}
+
+.sigam-nos{
+    margin-left: 17px;
+}
+
+.ligue-ja{
+    color: #bfa630;
+}
+
+.linha-esquerda{
+    margin-right: 10px;
+}
+
+.linha-direita{
+    margin-left: 10px;
+}
+
+p.paragrafo{
+    margin-bottom: 0px;
+    font-size: 0.93rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.nav-item{
+    margin-top: 8px;
+}
+
+.flex-atuacao{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.espaco-contents-atuacao{
+    margin-top: 60px
+}
+
+.social{
+    color: #FFFFFF;
+    transition: all 0.3s linear;
+}
+
+.social:hover{
+    color: sandybrown;
+}
+
+.font-area{
+    font-family: 'Justus';
+}
+
+.titulo-area{
+    font-family: 'Titulos';
+}
+
+.maps-spaces{
+    margin-top: 30px;
+}
+
+.justificar{
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
